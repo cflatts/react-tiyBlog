@@ -62,6 +62,7 @@ const app = function() {
                   )
         }
     })
+    ReactDOM.render(<HomeView/>,document.querySelector('.container'))
 }
 
 app()

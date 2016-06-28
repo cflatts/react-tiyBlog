@@ -19764,6 +19764,9 @@ var app = function app() {
             }, '+   Follow')))));
         }
     });
+    ReactDOM.render(React.createElement(HomeView, {
+        __self: this
+    }), document.querySelector('.container'));
 };
 
 app();
