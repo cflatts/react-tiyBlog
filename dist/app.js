@@ -19726,7 +19726,19 @@ var app = function app() {
 
         render: function render() {
             return React.createElement('div', { 'class': 'middle', __self: this
-            }, React.createElement('div', { 'class': 'leftCol', __self: this
+            }, React.createElement(LeftCol, {
+                __self: this
+            }), React.createElement(RightCol, {
+                __self: this
+            }));
+        }
+    });
+
+    var LeftCol = React.createClass({
+        displayName: 'LeftCol',
+
+        render: function render() {
+            return React.createElement('div', { 'class': 'leftCol', __self: this
             }, React.createElement('h3', { 'class': 'black', __self: this
             }, 'THE IRON YARD | HOUSTON'), React.createElement('p', {
                 __self: this
@@ -19737,22 +19749,30 @@ var app = function app() {
             }, 'SEARCH'), React.createElement('div', { 'class': 'box', __self: this
             }, React.createElement('p', {
                 __self: this
-            }, 'Search Keywords'))), React.createElement('div', { 'class': 'rightCol', __self: this
+            }, 'Search Keywords')));
+        }
+    });
+
+    var RightCol = React.createClass({
+        displayName: 'RightCol',
+
+        render: function render() {
+            return React.createElement('div', { 'class': 'rightCol', __self: this
             }, React.createElement('h1', { 'class': 'black', __self: this
-            }, 'September 22 Starts a New Class of The Iron Yard Houston'), React.createElement('p', {
+            }, ' September 22 Starts a New Class of The Iron Yard Houston '), React.createElement('p', {
                 __self: this
             }, React.createElement('i', {
                 __self: this
-            }, 'by Brian Dorton, Campus Director of ', React.createElement('a', { href: 'https://www.theironyard.com/locations/houston.html', __self: this
+            }, 'by Brian Dorton, Campus  Director of ', React.createElement('a', { href: 'https://www.theironyard.com/locations/houston.html', __self: this
             }, 'The Iron Yard'), ' Houston')), React.createElement('img', { id: 'classroom', src: 'http://magentanova.github.io/html-intro-1/images/classroom.jpg', __self: this
             }), React.createElement('p', {
                 __self: this
             }, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint alias repudiandae ratione, dolores laudantium, eaque obcaecati nam iusto quia ad, commodi mollitia maiores fuga illo eveniet sequi voluptatum dolorem veniam.'), React.createElement('div', { id: 'posting', __self: this
             }, React.createElement('div', { 'class': 'boxPosting', id: 'topBox', __self: this
-            }, React.createElement('p', { 'class': 'black', __self: this
+            }, React.createElement('p', { 'class': 'back', __self: this
             }, React.createElement('strong', {
                 __self: this
-            }, 'Never miss a post!'))), React.createElement('div', { 'class': 'boxPosting', id: 'bottomBox', __self: this
+            }, 'Nevwr miss a post!'))), React.createElement('div', { 'class': 'boxPosting', id: 'bottomBox', __self: this
             }, React.createElement('img', { src: 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png', __self: this
             }), React.createElement('div', { id: 'insideBox', __self: this
             }, React.createElement('p', { 'class': 'black', __self: this
@@ -19761,9 +19781,48 @@ var app = function app() {
             }, 'tiyhouston')), React.createElement('p', {
                 __self: this
             }, 'The Iron Yard | Houston')), React.createElement('div', { id: 'follow', __self: this
-            }, '+   Follow')))));
+            }, '+ Follow'))));
         }
     });
+
+    // var Middle = React.createClass ({
+    //     render: function () {
+    //         return (
+    //             <div class="middle">
+    //                 <div class = "leftCol">
+    //                     <h3 class = "black">THE IRON YARD | HOUSTON</h3>
+    //                     <p>Happenings and updates from The Iron Yard in Houston, TX</p>
+    //                     <hr />
+    //                     <h3>SEARCH</h3>
+    //                     <div class="box">
+    //                         <p>Search Keywords</p>
+    //                     </div>
+    //                 </div>
+    //                 <div class = "rightCol">
+    //                     <h1 class = "black">September 22 Starts a New Class of The Iron Yard Houston</h1>
+    //                     <p><i>by Brian Dorton, Campus Director of <a href="https://www.theironyard.com/locations/houston.html">The Iron Yard</a> Houston</i></p>
+    //                     <img id = "classroom" src = "http://magentanova.github.io/html-intro-1/images/classroom.jpg" />
+    //                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint alias repudiandae ratione, dolores laudantium, eaque obcaecati nam iusto quia ad, commodi mollitia maiores fuga illo eveniet sequi voluptatum dolorem veniam.</p>
+    //                     <div id = "posting">
+    //                         <div class = "boxPosting" id = "topBox">
+    //                             <p class = "black"><strong>Never miss a post!</strong></p>
+    //                     </div>
+    //                     <div class = "boxPosting" id = "bottomBox">
+    //                         <img src="http://magentanova.github.io/html-intro-1/images/ironyardlogo.png" />
+    //                         <div id="insideBox">
+    //                             <p class="black"><strong>tiyhouston</strong></p>
+    //                             <p>The Iron Yard | Houston</p>
+    //                         </div>
+    //                         <div id="follow">
+    //                             +   Follow
+    //                         </div>
+    //                     </div>
+    //                   </div>
+    //                 </div>
+    //               </div>
+    //               )
+    //     }
+    // })
     ReactDOM.render(React.createElement(HomeView, {
         __self: this
     }), document.querySelector('.container'));
