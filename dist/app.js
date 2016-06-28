@@ -19714,7 +19714,7 @@ var app = function app() {
         displayName: 'Top',
 
         render: function render() {
-            return React.createElement('div', { 'class': 'top', __self: this
+            return React.createElement('div', { className: 'top', __self: this
             }, React.createElement('img', { id: 'skyline', src: 'http://magentanova.github.io/html-intro-1/images/houston.jpg', __self: this
             }), React.createElement('img', { id: 'logo', src: 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png', __self: this
             }));
@@ -19725,7 +19725,7 @@ var app = function app() {
         displayName: 'Middle',
 
         render: function render() {
-            return React.createElement('div', { 'class': 'middle', __self: this
+            return React.createElement('div', { className: 'middle', __self: this
             }, React.createElement(LeftCol, {
                 __self: this
             }), React.createElement(RightCol, {
@@ -19738,15 +19738,15 @@ var app = function app() {
         displayName: 'LeftCol',
 
         render: function render() {
-            return React.createElement('div', { 'class': 'leftCol', __self: this
-            }, React.createElement('h3', { 'class': 'black', __self: this
+            return React.createElement('div', { className: 'leftCol', __self: this
+            }, React.createElement('h3', { className: 'black', __self: this
             }, 'THE IRON YARD | HOUSTON'), React.createElement('p', {
                 __self: this
             }, 'Happenings and updates from The Iron Yard in Houston, TX'), React.createElement('hr', {
                 __self: this
             }), React.createElement('h3', {
                 __self: this
-            }, 'SEARCH'), React.createElement('div', { 'class': 'box', __self: this
+            }, 'SEARCH'), React.createElement('div', { className: 'box', __self: this
             }, React.createElement('p', {
                 __self: this
             }, 'Search Keywords')));
@@ -19757,8 +19757,8 @@ var app = function app() {
         displayName: 'RightCol',
 
         render: function render() {
-            return React.createElement('div', { 'class': 'rightCol', __self: this
-            }, React.createElement('h1', { 'class': 'black', __self: this
+            return React.createElement('div', { className: 'rightCol', __self: this
+            }, React.createElement('h1', { className: 'black', __self: this
             }, ' September 22 Starts a New Class of The Iron Yard Houston '), React.createElement('p', {
                 __self: this
             }, React.createElement('i', {
@@ -19768,14 +19768,14 @@ var app = function app() {
             }), React.createElement('p', {
                 __self: this
             }, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint alias repudiandae ratione, dolores laudantium, eaque obcaecati nam iusto quia ad, commodi mollitia maiores fuga illo eveniet sequi voluptatum dolorem veniam.'), React.createElement('div', { id: 'posting', __self: this
-            }, React.createElement('div', { 'class': 'boxPosting', id: 'topBox', __self: this
-            }, React.createElement('p', { 'class': 'back', __self: this
+            }, React.createElement('div', { className: 'boxPosting', id: 'topBox', __self: this
+            }, React.createElement('p', { className: 'back', __self: this
             }, React.createElement('strong', {
                 __self: this
-            }, 'Nevwr miss a post!'))), React.createElement('div', { 'class': 'boxPosting', id: 'bottomBox', __self: this
+            }, 'Never miss a post!'))), React.createElement('div', { className: 'boxPosting', id: 'bottomBox', __self: this
             }, React.createElement('img', { src: 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png', __self: this
             }), React.createElement('div', { id: 'insideBox', __self: this
-            }, React.createElement('p', { 'class': 'black', __self: this
+            }, React.createElement('p', { className: 'black', __self: this
             }, React.createElement('strong', {
                 __self: this
             }, 'tiyhouston')), React.createElement('p', {

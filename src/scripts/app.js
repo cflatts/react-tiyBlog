@@ -16,7 +16,7 @@ const app = function() {
     var Top = React.createClass ({
         render: function () {
             return (
-                <div class = 'top'>
+                <div className = 'top'>
                     <img id = "skyline" src = "http://magentanova.github.io/html-intro-1/images/houston.jpg" />
                     <img id = "logo" src = "http://magentanova.github.io/html-intro-1/images/ironyardlogo.png" />
                 </div>
@@ -27,7 +27,7 @@ const app = function() {
     var Middle = React.createClass ({
         render: function() {
             return (
-                <div class = 'middle'>
+                <div className = 'middle'>
                     <LeftCol />
                     <RightCol />
                 </div>
@@ -38,12 +38,12 @@ const app = function() {
     var LeftCol = React.createClass ({
         render: function () {
             return (
-                <div class = "leftCol">
-                    <h3 class = "black">THE IRON YARD | HOUSTON</h3>
+                <div className = "leftCol">
+                    <h3 className = "black">THE IRON YARD | HOUSTON</h3>
                     <p>Happenings and updates from The Iron Yard in Houston, TX</p>
                     <hr />
                     <h3>SEARCH</h3>
-                    <div class="box">
+                    <div className = "box">
                         <p>Search Keywords</p>
                      </div>
                 </div>
@@ -54,19 +54,19 @@ const app = function() {
     var RightCol = React.createClass ({
         render: function () {
             return (
-                <div class = 'rightCol'>
-                    <h1 class = 'black'> September 22 Starts a New Class of The Iron Yard Houston </h1>
+                <div className = 'rightCol'>
+                    <h1 className = 'black'> September 22 Starts a New Class of The Iron Yard Houston </h1>
                     <p><i>by Brian Dorton, Campus  Director of <a href="https://www.theironyard.com/locations/houston.html">The Iron Yard</a> Houston</i></p>
                     <img id = 'classroom' src = 'http://magentanova.github.io/html-intro-1/images/classroom.jpg' />
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint alias repudiandae ratione, dolores laudantium, eaque obcaecati nam iusto quia ad, commodi mollitia maiores fuga illo eveniet sequi voluptatum dolorem veniam.</p>
                     <div id = 'posting'>
-                        <div class = 'boxPosting' id = 'topBox'>
-                            <p class = 'back'><strong>Nevwr miss a post!</strong></p>
+                        <div className = 'boxPosting' id = 'topBox'>
+                            <p className = 'back'><strong>Never miss a post!</strong></p>
                         </div>
-                        <div class = 'boxPosting' id = 'bottomBox'>
+                        <div className = 'boxPosting' id = 'bottomBox'>
                             <img src = 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png' />
                             <div id = 'insideBox'>
-                            <p class = 'black'><strong>tiyhouston</strong></p>
+                            <p className = 'black'><strong>tiyhouston</strong></p>
                             <p>The Iron Yard | Houston</p>
                         </div>
                         <div id = 'follow'>
