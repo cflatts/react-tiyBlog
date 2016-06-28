@@ -19697,16 +19697,73 @@ var React = require('react'),
     ReactDOM = require('react-dom');
 
 var app = function app() {
+    var HomeView = React.createClass({
+        displayName: 'HomeView',
 
-	var Header = React.createClass({
-		displayName: 'Header',
+        render: function render() {
+            return React.createElement('div', { id: 'container', __self: this
+            }, React.createElement(Top, {
+                __self: this
+            }), React.createElement(Middle, {
+                __self: this
+            }));
+        }
+    });
 
-		render: function render() {
-			return React.createElement('h1', null, 'YOLO');
-		}
-	});
+    var Top = React.createClass({
+        displayName: 'Top',
 
-	ReactDOM.render(React.createElement(Header, null), document.querySelector('.container'));
+        render: function render() {
+            return React.createElement('div', { 'class': 'top', __self: this
+            }, React.createElement('img', { id: 'skyline', src: 'http://magentanova.github.io/html-intro-1/images/houston.jpg', __self: this
+            }), React.createElement('img', { id: 'logo', src: 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png', __self: this
+            }));
+        }
+    });
+
+    var Middle = React.createClass({
+        displayName: 'Middle',
+
+        render: function render() {
+            return React.createElement('div', { 'class': 'middle', __self: this
+            }, React.createElement('div', { 'class': 'leftCol', __self: this
+            }, React.createElement('h3', { 'class': 'black', __self: this
+            }, 'THE IRON YARD | HOUSTON'), React.createElement('p', {
+                __self: this
+            }, 'Happenings and updates from The Iron Yard in Houston, TX'), React.createElement('hr', {
+                __self: this
+            }), React.createElement('h3', {
+                __self: this
+            }, 'SEARCH'), React.createElement('div', { 'class': 'box', __self: this
+            }, React.createElement('p', {
+                __self: this
+            }, 'Search Keywords'))), React.createElement('div', { 'class': 'rightCol', __self: this
+            }, React.createElement('h1', { 'class': 'black', __self: this
+            }, 'September 22 Starts a New Class of The Iron Yard Houston'), React.createElement('p', {
+                __self: this
+            }, React.createElement('i', {
+                __self: this
+            }, 'by Brian Dorton, Campus Director of ', React.createElement('a', { href: 'https://www.theironyard.com/locations/houston.html', __self: this
+            }, 'The Iron Yard'), ' Houston')), React.createElement('img', { id: 'classroom', src: 'http://magentanova.github.io/html-intro-1/images/classroom.jpg', __self: this
+            }), React.createElement('p', {
+                __self: this
+            }, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint alias repudiandae ratione, dolores laudantium, eaque obcaecati nam iusto quia ad, commodi mollitia maiores fuga illo eveniet sequi voluptatum dolorem veniam.'), React.createElement('div', { id: 'posting', __self: this
+            }, React.createElement('div', { 'class': 'boxPosting', id: 'topBox', __self: this
+            }, React.createElement('p', { 'class': 'black', __self: this
+            }, React.createElement('strong', {
+                __self: this
+            }, 'Never miss a post!'))), React.createElement('div', { 'class': 'boxPosting', id: 'bottomBox', __self: this
+            }, React.createElement('img', { src: 'http://magentanova.github.io/html-intro-1/images/ironyardlogo.png', __self: this
+            }), React.createElement('div', { id: 'insideBox', __self: this
+            }, React.createElement('p', { 'class': 'black', __self: this
+            }, React.createElement('strong', {
+                __self: this
+            }, 'tiyhouston')), React.createElement('p', {
+                __self: this
+            }, 'The Iron Yard | Houston')), React.createElement('div', { id: 'follow', __self: this
+            }, '+   Follow')))));
+        }
+    });
 };
 
 app();
